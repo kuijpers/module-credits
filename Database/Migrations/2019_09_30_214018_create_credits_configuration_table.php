@@ -16,6 +16,15 @@ class CreateCreditsConfigurationTable extends Migration
         Schema::create('credits_configuration', function (Blueprint $table) {
             $table->bigIncrements('id');
 
+			$table->string('slug')->unique();
+
+			$table->string('name');
+			$table->text('description');
+			$table->boolean('value_bool')->nullable();
+			$table->text('value_text')->nullable();
+
+			$table->softDeletes();
+
             $table->timestamps();
         });
     }
