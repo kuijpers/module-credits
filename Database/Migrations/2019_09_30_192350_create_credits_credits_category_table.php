@@ -16,7 +16,16 @@ class CreateCreditsCreditsCategoryTable extends Migration
         Schema::create('credits_credits_category', function (Blueprint $table) {
             $table->bigIncrements('id');
 
+			$table->unsignedInteger('credits_id');
+
+			$table->unsignedInteger('credits_category_id');
+
+			$table->softDeletes();
+
             $table->timestamps();
+
+			$table->foreign('credits_id')->references('id')->on('credits')->onDelete('cascade');
+			$table->foreign('credits_category_id')->references('id')->on('credits_category')->onDelete('cascade');
         });
     }
 
