@@ -12,5 +12,5 @@
 */
 
 Route::prefix('credits')->group(function() {
-    Route::get('/', 'CreditsController@index');
+    Route::get('/', 'CreditsController@index')->name('main.credits');
 });
