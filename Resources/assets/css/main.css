@@ -1,0 +1,14 @@
+.section-a {
+	min-height: 150px;
+	padding:    20px;
+	}
+
+
+.section-b{
+	padding:    20px;
+	}
+
+.section-b .card{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
