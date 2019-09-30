@@ -16,6 +16,13 @@ class CreditsDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        // $this->call("OthersTableSeeder");
+
+		$this->call(CreditsInformationTableSeeder::class);
+
+		$this->call(CreditsTableSeeder::class);
+
+		$this->call(CreditsCategoryTableSeeder::class);
+
+		$this->call(CreditsCreditsCategoryTableSeeder::class);
     }
 }
