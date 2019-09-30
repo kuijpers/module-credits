@@ -16,6 +16,28 @@ class CreditsConfigurationTableSeeder extends Seeder
     {
         Model::unguard();
 
-        // $this->call("OthersTableSeeder");
+        $configurations = [
+        					[
+								'name' => 'Set title',
+								'slug' => 'set-title',
+								'description' => 'Title visible on website yes or no ?',
+								'value_bool' => '1',
+								'value_text' => '',
+							],
+        					[
+								'name' => 'Set body',
+								'slug' => 'set-body',
+								'description' => 'Body visible on website yes or no ?',
+								'value_bool' => '1',
+								'value_text' => '',
+							],
+        					[
+								'name' => 'Languages for this module',
+								'slug' => 'languages-for-this-module',
+								'description' => 'What languages are availlable for this module',
+								'value_bool' => '',
+								'value_text' => json_encode(['nl','gb']),
+							],
+						];
     }
 }

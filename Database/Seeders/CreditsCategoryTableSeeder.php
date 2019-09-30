@@ -16,6 +16,25 @@ class CreditsCategoryTableSeeder extends Seeder
     {
         Model::unguard();
 
-        // $this->call("OthersTableSeeder");
+        $category = [
+        				// ID = 1
+        				[
+        					'name' 			=> 'Software',
+        					'slug' 			=> 'software',
+        					'created_by' 	=> '1',
+						],
+						// ID = 2
+        				[
+        					'name' 			=> 'API',
+        					'slug' 			=> 'api',
+        					'created_by' 	=> '1',
+						],
+						// ID = 3
+        				[
+        					'name' 			=> 'Packages',
+        					'slug' 			=> 'packages',
+        					'created_by' 	=> '1',
+						],
+		];
     }
 }
