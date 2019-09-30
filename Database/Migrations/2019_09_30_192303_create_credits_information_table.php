@@ -35,6 +35,7 @@ class CreateCreditsInformationTable extends Migration
 			$table->unsignedInteger('publisher_id')->nullable();
 			$table->datetime('publisher_approve')->nullable();
 
+			$table->boolean('publish_permanent')->nullable();
 			$table->datetime('publish_date_start')->nullable();
 			$table->datetime('publish_date_end')->nullable();
 
