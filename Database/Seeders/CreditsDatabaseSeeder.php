@@ -26,5 +26,7 @@ class CreditsDatabaseSeeder extends Seeder
 		$this->call(CreditsCreditsCategoryTableSeeder::class);
 
 		$this->call(CreditsConfigurationTableSeeder::class);
+
+		$this->call(PermissionsTableSeeder::class);
     }
 }
