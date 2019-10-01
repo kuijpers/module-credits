@@ -16,9 +16,9 @@ class CreateCreditsCreditsCategoryTable extends Migration
         Schema::create('credits_credits_category', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-			$table->unsignedInteger('credits_id');
+			$table->bigInteger('credits_id')->unsigned();
 
-			$table->unsignedInteger('credits_category_id');
+			$table->bigInteger('credits_category_id')->unsigned();
 
 			$table->softDeletes();
 

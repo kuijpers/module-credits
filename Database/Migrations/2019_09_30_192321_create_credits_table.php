@@ -28,13 +28,13 @@ class CreateCreditsTable extends Migration
 
 			$table->integer('web_order')->unique();
 
-			$table->unsignedInteger('author_id');
+			$table->bigInteger('author_id')->unsigned();
 			$table->datetime('author_approve')->nullable();
 
-			$table->unsignedInteger('editor_id')->nullable();
+			$table->bigInteger('editor_id')->unsigned()->nullable();
 			$table->datetime('editor_approve')->nullable();
 
-			$table->unsignedInteger('publisher_id')->nullable();
+			$table->bigInteger('publisher_id')->unsigned()->nullable();
 			$table->datetime('publisher_approve')->nullable();
 
 			$table->boolean('publish_permanent')->nullable();

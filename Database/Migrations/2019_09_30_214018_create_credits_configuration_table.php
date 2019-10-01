@@ -24,7 +24,7 @@ class CreateCreditsConfigurationTable extends Migration
 			$table->boolean('value_bool')->nullable();
 			$table->text('value_text')->nullable();
 
-			$table->unsignedInteger('updated_by');
+			$table->bigInteger('updated_by')->unsigned();
 
 			$table->softDeletes();
 

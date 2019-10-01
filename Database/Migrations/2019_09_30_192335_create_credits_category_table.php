@@ -20,7 +20,7 @@ class CreateCreditsCategoryTable extends Migration
 
 			$table->string('slug')->unique();
 
-			$table->unsignedInteger('created_by')->nullable();
+			$table->bigInteger('created_by')->unsigned()->nullable();
 
 			$table->softDeletes();
 
