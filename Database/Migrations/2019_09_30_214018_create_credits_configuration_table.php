@@ -16,16 +16,21 @@ class CreateCreditsConfigurationTable extends Migration
         Schema::create('credits_configuration', function (Blueprint $table) {
             $table->bigIncrements('id');
 
+			$table->string('name');
+
 			$table->string('slug')->unique();
 
-			$table->string('name');
 			$table->text('description');
 			$table->boolean('value_bool')->nullable();
 			$table->text('value_text')->nullable();
 
+			$table->unsignedInteger('updated_by');
+
 			$table->softDeletes();
 
             $table->timestamps();
+
+			$table->foreign('updated_by')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
