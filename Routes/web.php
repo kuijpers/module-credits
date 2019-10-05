@@ -14,3 +14,8 @@
 Route::prefix('credits')->group(function() {
     Route::get('/', 'CreditsController@index')->name('main.credits');
 });
+
+
+Route::prefix('dashboard/credits')->group(function() {
+	Route::get('/', 'CreditsController@index_dashboard')->name('dashboard.credits.index');
+});

@@ -16,6 +16,10 @@ class CreditsController extends Controller
     {
         return view('credits::index');
     }
+    public function index_dashboard()
+    {
+        return view('credits::dashboard.index');
+    }
 
     /**
      * Show the form for creating a new resource.

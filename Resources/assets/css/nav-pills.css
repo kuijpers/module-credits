@@ -1,0 +1,29 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background-image	: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+	background-repeat	: repeat-x;
+	background-color	: #f8f9fa!important;
+	border				: 1px solid transparent !important;
+	border-color		: #e7e7e7 !important;
+	box-shadow			: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+	color				: #000000;
+	}
+
+.nav-pills a:hover, a:focus {
+	color				: #000000 !important;
+	background-color	: #eeeeee !important;
+	}
+
+
+.nav-pills > li > a.active {
+	background-color		: #39e600 !important;
+	color					: #28a745 !important;
+	}
+
+.nav-pills > li > a:hover {
+	color					: #eeeeee !important;
+	}
+
+.nav-link-color {
+	color					: #000000;
+	}
+
