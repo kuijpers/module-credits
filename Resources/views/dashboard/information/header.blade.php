@@ -1,7 +1,7 @@
 <div class="row mb-3 mt-3">
     <div class="col-md-2 pull-left">
         @can('credits-personal-create')
-            <a class="btn btn btn-outline-secondary" href="{{ route('roles.create') }}">
+            <a class="btn btn btn-outline-secondary" href="{{ route('dashboard.credits.information.create') }}">
                 Create New Information
             </a>
         @endcan

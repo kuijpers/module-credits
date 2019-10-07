@@ -17,5 +17,14 @@ Route::prefix('credits')->group(function() {
 
 
 Route::prefix('dashboard/credits')->group(function() {
+
 	Route::get('/', 'CreditsController@index_dashboard')->name('dashboard.credits.index');
+
+
+
+
+	Route::get('/information/create', 'CreditsController@create_info')->name('dashboard.credits.information.create');
+
+	Route::post('/information/store', 'CreditsController@store_info')->name('dashboard.credits.information.store');
+
 });
