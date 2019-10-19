@@ -10,9 +10,9 @@
 
 @section('topcss')
 
-{{--    <link href="{{ asset('modules/credits/css/main.css') }}" rel="stylesheet">--}}
+    <link href="{{ asset('modules/credits/css/main.css') }}" rel="stylesheet">
 
-    <link href="{{ Module::asset('credits:css/main.css') }}" rel="stylesheet">
+{{--    <link href="{{ Module::asset('credits:css/main.css') }}" rel="stylesheet">--}}
 
 @endsection
 

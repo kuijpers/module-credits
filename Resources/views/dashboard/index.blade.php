@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="{{asset('modules/credits/css/nav-pills.css')}}">
 
+    <link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
 @endsection
 
 @section('topjs')
@@ -20,10 +24,24 @@
 
 @section('bottomjs')
 
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/js/bootstrap4-toggle.min.js"></script>
+
+    @include('credits::dashboard.includes.modals')
+
+    @include('credits::dashboard.includes.datatables')
+
+
 @endsection
 
 
 @section('content')
+
+    @include('credits::dashboard.includes.notifications')
+    
+    @include('credits::dashboard.information.modals.index')
+
     <div class="row mb-3">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 margin-tb">
             <div class="pull-left">

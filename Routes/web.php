@@ -23,8 +23,16 @@ Route::prefix('dashboard/credits')->group(function() {
 
 
 
-	Route::get('/information/create', 'CreditsController@create_info')->name('dashboard.credits.information.create');
+	Route::get('/information/create', 'CreditsInformationController@create')->name('dashboard.credits.information.create');
 
-	Route::post('/information/store', 'CreditsController@store_info')->name('dashboard.credits.information.store');
+	Route::post('/information/store', 'CreditsInformationController@store')->name('dashboard.credits.information.store');
+
+	Route::patch('/information/edit', 'CreditsInformationController@update')->name('dashboard.credits.information.update');
+
+	Route::patch('/information/approve', 'CreditsInformationController@approve')->name('dashboard.credits.information.approve');
+
+	Route::delete('/information/delete', 'CreditsInformationController@delete')->name('dashboard.credits.information.delete');
+
+	Route::delete('/information/destroy', 'CreditsInformationController@destroy')->name('dashboard.credits.information.destroy');
 
 });

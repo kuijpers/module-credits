@@ -4,7 +4,7 @@
     <a class="nav-link nav-link-color active" id="information-personal-tab" data-toggle="pill" href="#information-personal" role="tab" aria-controls="information-personal" aria-expanded="true">
         Personal
         <span class="badge badge-secondary float-right mt-1">
-            14
+             {{$personal_info_drafts->count()}}
         </span>
     </a>
 
