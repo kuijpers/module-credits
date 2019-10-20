@@ -6,7 +6,7 @@
 
                     <div class="card-header">
                         <h2>
-                            Personal drafts
+                            @lang('credits::general.personal-drafts')
                         </h2>
                     </div>
                     @if ($errors->any())
@@ -23,8 +23,8 @@
                         <table class="table table-striped table-hover table-sm" id="personal_draft_information">
                             <thead>
                             <tr>
-                                <th scope="col">Title</th>
-                                <th scope="col">Content</th>
+                                <th scope="col">@lang('credits::general.table-title')</th>
+                                <th scope="col">@lang('credits::general.table-content')</th>
                                 <th scope="col">&nbsp;</th>
                             </tr>
                             </thead>
@@ -55,7 +55,9 @@
                                         <i class="fas fa-eye"
                                            data-toggle="tooltip"
                                            data-placement="top"
-                                           title="View draft"></i>
+                                           title="@lang('credits::tooltips.personal-view-button')">
+
+                                        </i>
                                     </a>
 
                                     <a href="#" class="badge badge-warning mr-1"
@@ -65,7 +67,9 @@
                                         <i class="fas fa-edit"
                                            data-toggle="tooltip"
                                            data-placement="top"
-                                           title="Edit draft"></i>
+                                           title="@lang('credits::tooltips.personal-edit-button')">
+
+                                        </i>
                                     </a>
 
                                     <a href="#" class="badge badge-success mr-1"
@@ -75,7 +79,9 @@
                                         <i class="fas fa-check-circle"
                                            data-toggle="tooltip"
                                            data-placement="top"
-                                           title="Approve draft"></i>
+                                           title="@lang('credits::tooltips.personal-approve-button')">
+
+                                        </i>
                                     </a>
 
                                     <a href="#" class="badge badge-danger ml-2 mr-2"
@@ -85,7 +91,9 @@
                                         <i class="fas fa-trash-alt"
                                            data-toggle="tooltip"
                                            data-placement="top"
-                                           title="Delete draft"></i>
+                                           title="@lang('credits::tooltips.personal-delete-button')">
+
+                                        </i>
                                     </a>
                                     </div>
                                 </td>

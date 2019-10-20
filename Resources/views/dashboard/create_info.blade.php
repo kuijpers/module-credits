@@ -56,7 +56,7 @@
     <div class="row mb-3">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Credits Module</h2>
+                <h2>@lang('credits::general.general-title')</h2>
             </div>
         </div>
     </div>
@@ -64,8 +64,8 @@
     <div class="row mb-3">
 
         <div class="col-md-12">
-            <a class="btn btn btn-outline-secondary"  onclick="history.back()">
-                Back
+            <a class="btn btn btn-outline-secondary"  href="{{route('dashboard.credits.index')}}">
+                @lang('credits::forms.button-back')
             </a>
         </div>
 
@@ -78,7 +78,7 @@
             <div class="card">
                 <div class="card-header">
                     <h2 class="text-info">
-                        Create new top information
+                        @lang('credits::general.create-new-information')
                     </h2>
                 </div>
                 <div class="card-body">
@@ -87,7 +87,7 @@
                         @csrf
                         <div class="form-group">
                             <label for="title" class="h4">
-                                Who ? *
+                                @lang('credits::general.for-who') *
                             </label>
                             <div class="form-row">
                                 <div class="col-md-11">
@@ -106,14 +106,14 @@
                                 <div class="col-md-1">
                                     <li class="fas fa-question-circle fa-lg text-info"
                                         data-toggle="tooltip"
-                                        title="Who to give credits to !">
+                                        title="@lang('credits::tooltips.for-who')">
                                     </li>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="link" class="h4">
-                                Where ? *
+                                @lang('credits::general.where-to') *
                             </label>
                             <div class="form-row">
                                 <div class="col-md-11">
@@ -131,10 +131,7 @@
                                 <div class="col-md-1">
                                     <li class="fas fa-question-circle fa-lg text-info"
                                         data-toggle="tooltip"
-                                        title=
-                                        "Make sure it's an active link !
-For example make use of http:// or https://
-or copy link form the address bar">
+                                        title="@lang('credits::tooltips.where-to')">
                                     </li>
                                 </div>
                             </div>
@@ -142,7 +139,7 @@ or copy link form the address bar">
 
                         <div class="form-group">
                             <label for="information" class="h4">
-                                Why ? *
+                                @lang('credits::general.why-give') *
                             </label>
                             <div class="form-row">
                                 <div class="col-md-11">
@@ -158,9 +155,7 @@ or copy link form the address bar">
                                 <div class="col-md-1">
                                     <li class="fas fa-question-circle fa-lg text-info"
                                         data-toggle="tooltip"
-                                        title=
-                                        "Why do you give this person/company/organisation credits.
-Let the visitors know what they did for this website.">
+                                        title="@lang('credits::tooltips.why-give')">
                                     </li>
 
                                 </div>
@@ -174,11 +169,11 @@ Let the visitors know what they did for this website.">
                         </div>
                         <div class="row">
                             <div class="col-md-3 offset-md-1">
-                                <button type="submit" class="btn btn-success">Submit</button>
-                                <button class="btn btn btn-outline-primary" type="reset" value="Reset">Reset</button>
+                                <button type="submit" class="btn btn-success">@lang('credits::forms.button-submit')</button>
+                                <button class="btn btn btn-outline-primary" type="reset" value="Reset">@lang('credits::forms.button-reset')</button>
                             </div>
                             <div class="col-md-8 text-warning">
-                                Fields marked with <strong>*</strong> are required fields to fill in.
+                                @lang('credits::forms.fields-required')
                             </div>
 
 

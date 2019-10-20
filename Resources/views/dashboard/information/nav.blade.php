@@ -2,7 +2,7 @@
 
 
     <a class="nav-link nav-link-color active" id="information-personal-tab" data-toggle="pill" href="#information-personal" role="tab" aria-controls="information-personal" aria-expanded="true">
-        Personal
+        @lang('credits::navigation.tab-side-personal')
         <span class="badge badge-secondary float-right mt-1">
              {{$personal_info_drafts->count()}}
         </span>
@@ -11,7 +11,7 @@
 
 
     <a class="nav-link nav-link-color" id="information-authors-tab" data-toggle="pill" href="#information-authors" role="tab" aria-controls="information-authors" aria-expanded="true">
-        Authors
+        @lang('credits::navigation.tab-side-authors')
         <span class="badge badge-secondary float-right mt-1">
             2
         </span>
@@ -20,7 +20,7 @@
 
 
     <a class="nav-link nav-link-color" id="information-editor-tab" data-toggle="pill" href="#information-editor" role="tab" aria-controls="information-editor" aria-expanded="true">
-        Editor
+        @lang('credits::navigation.tab-side-editor')
         <span class="badge badge-secondary float-right mt-1">
             4
         </span>
@@ -29,7 +29,7 @@
 
 
     <a class="nav-link nav-link-color" id="information-publisher-tab" data-toggle="pill" href="#information-publisher" role="tab" aria-controls="information-publisher" aria-expanded="true">
-        Publisher
+        @lang('credits::navigation.tab-side-publisher')
         <span class="badge badge-secondary float-right mt-1">
             3
         </span>
@@ -38,7 +38,7 @@
 
 
     <a class="nav-link nav-link-color" id="information-published-tab" data-toggle="pill" href="#information-published" role="tab" aria-controls="information-published" aria-expanded="true">
-        Published
+        @lang('credits::navigation.tab-side-published')
         <span class="badge badge-secondary float-right mt-1">
             6
         </span>
@@ -47,7 +47,7 @@
 
 
     <a class="nav-link nav-link-color" id="information-archived-tab" data-toggle="pill" href="#information-archived" role="tab" aria-controls="information-archived" aria-expanded="true">
-        Archived
+        @lang('credits::navigation.tab-side-archived')
         <span class="badge badge-secondary float-right mt-1">
             125
         </span>
@@ -56,7 +56,7 @@
 
 
     <a class="nav-link nav-link-color" id="information-deleted-tab" data-toggle="pill" href="#information-deleted" role="tab" aria-controls="information-deleted" aria-expanded="true">
-        Deleted
+        @lang('credits::navigation.tab-side-deleted')
         <span class="badge badge-secondary float-right mt-1">
             20
         </span>

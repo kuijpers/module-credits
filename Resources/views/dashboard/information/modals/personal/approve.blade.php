@@ -5,7 +5,7 @@
             <div class="modal-header">
                 <h5 class="modal-title text-success" id="exampleModalLongTitle">
                     <strong>
-                        Approve this
+                        @lang('credits::modals.personal-approve')
                     </strong>
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -17,7 +17,7 @@
                 {{ method_field('PATCH') }}
 
                 <div class="modal-body">
-                    Please check if this is the title you would like to approve for further process.
+                    @lang('credits::modals.personal-approve-explanation')
                     <hr>
 
                     <input name="id" type="hidden" class="form-control span6" id="approve_personal_drafts_id">
@@ -26,25 +26,25 @@
 
                     <div class="col-md-12 text-primary">
                         <h5>
-                            Title text
+                            @lang('credits::modals.title-text')
                         </h5>
                     </div>
 
                     <div class="col-md-12 approve_title mb-3">
                         Title
-                        This line of text will not be vissible on the website.
+                        This line of text will not be shown on the website.
                         This is where data will be placed using JS.
                     </div>
 
                     <div class="col-md-12 text-primary">
                         <h5>
-                            Body text
+                            @lang('credits::modals.body-text')
                         </h5>
                     </div>
 
                     <div class="col-md-12 approve_body">
                         Body
-                        This line of text will not be vissible on the website.
+                        This line of text will not be shown on the website.
                         This is where data will be placed using JS.
                     </div>
 
@@ -52,10 +52,10 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">
-                        Cancel
+                        @lang('credits::forms.button-cancel')
                     </button>
                     <button type="submit" class="btn btn-success" id="edit_personal_drafts_submit">
-                        Approve
+                        @lang('credits::forms.button-approve')
                     </button>
                 </div>
             </form>

@@ -2,12 +2,11 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Edit personal draft</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">@lang('credits::modals.personal-edit')</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-{{--            <form method="POST" action="{{route('dashboard.credits.information.update',['id' => $id])}}">--}}
             <form method="POST" action="{{route('dashboard.credits.information.update')}}">
                 @csrf
                 {{ method_field('PATCH') }}
@@ -26,7 +25,7 @@
                                 <div class="col-md-12 text-primary">
                                     <label for="personal_title">
                                         <h5>
-                                            Information title
+                                            @lang('credits::modals.title-text')
                                         </h5>
                                     </label>
                                 </div>
@@ -43,7 +42,7 @@
                                 <div class="col-md-12 text-primary">
                                     <label for="personal_edit_personal_drafts_description">
                                         <h5>
-                                            Information description
+                                            @lang('credits::modals.description-text')
                                         </h5>
                                     </label>
                                 </div>
@@ -59,7 +58,7 @@
                                 <div class="col-md-12 text-primary">
                                     <label for="personal_body">
                                         <h5>
-                                            Information content
+                                            @lang('credits::modals.body-text')
                                         </h5>
                                     </label>
                                 </div>
@@ -77,7 +76,7 @@
                                 <div class="col-md-12 text-primary">
 
                                     <div class="col-md-12">
-                                        <label for="author_approve">Approve for the next step</label>
+                                        <label for="author_approve">@lang('credits::modals.approve-next-step')</label>
                                     </div>
 
                                     <div class="col-md-12">
@@ -85,16 +84,12 @@
                                         <input name="approve" id="author_approve" type="checkbox"
                                                data-toggle="toggle"
                                                data-size="sm"
-                                               data-on="Approved"
-                                               data-off="Not Approved"
+                                               data-on="@lang('credits::forms.checkbox-approved')"
+                                               data-off="@lang('credits::forms.checkbox-not-approved')"
                                                data-onstyle="success"
                                                data-offstyle="danger"
                                                data-width="125">
 
-{{--                                        <div class="custom-control custom-switch">--}}
-{{--                                            <input type="checkbox" class="custom-control-input" id="customSwitch1">--}}
-{{--                                            <label class="custom-control-label" for="customSwitch1">Approve for the next step</label>--}}
-{{--                                        </div>--}}
                                     </div>
 
                                 </div>
@@ -107,10 +102,10 @@
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">
-                        Cancel
+                        @lang('credits::forms.button-cancel')
                     </button>
                     <button type="submit" class="btn btn-success" id="edit_personal_drafts_submit">
-                        Update
+                        @lang('credits::forms.button-update')
                     </button>
                 </div>
             </form>

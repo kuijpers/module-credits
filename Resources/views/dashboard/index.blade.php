@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="{{asset('modules/credits/css/nav-pills.css')}}">
 
+
+    <link rel="stylesheet" href="{{asset('libs/kuijpers-tosti/css/tosti.css')}}">
+
     <link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
@@ -45,7 +48,7 @@
     <div class="row mb-3">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Credits Module</h2>
+                <h2>@lang('credits::general.general-title')</h2>
             </div>
         </div>
     </div>
@@ -55,17 +58,17 @@
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
             <a class="nav-link  nav-link-color active" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="true">
-                Information
+                @lang('credits::navigation.tab-top-information')
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link nav-link-color" id="credits-tab" data-toggle="tab" href="#credits" role="tab" aria-controls="credits" aria-selected="false">
-                Credits
+                @lang('credits::navigation.tab-top-credits')
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link nav-link-color" id="config-tab" data-toggle="tab" href="#config" role="tab" aria-controls="config" aria-selected="false">
-                Config
+                @lang('credits::navigation.tab-top-configuration')
             </a>
         </li>
     </ul>

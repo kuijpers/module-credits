@@ -2,11 +2,11 @@
     <div class="col-md-2 pull-left">
         @can('credits-personal-create')
             <a class="btn btn btn-outline-secondary" href="{{ route('dashboard.credits.information.create') }}">
-                Create New Information
+                @lang('credits::forms.button-create')
             </a>
         @endcan
     </div>
     <div class="col-md-9 offset-md-1 pull-right">
-        <h2>Information for credits page</h2>
+        <h2>@lang('credits::general.information-title')</h2>
     </div>
 </div>

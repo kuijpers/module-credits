@@ -38,11 +38,11 @@ class CreditsInformationController extends Controller
 		// Add data to DB
 		if(static::add_to_credits_information($request)){
 
-			return redirect()->back()->with('success', 'Your entry is saved successfully.');
+			return redirect()->back()->with('success', 'entry-added-successfully');
 
 		}
 
-		return redirect()->back()->with('error', 'Something went wrong.');
+		return redirect()->back()->with('error', 'something-wrong');
 
 	}
 
@@ -66,19 +66,19 @@ class CreditsInformationController extends Controller
 
 				if(static::update_info_data($request)){
 
-					return redirect()->back()->with('success', 'Your entry is updated successfully.');
+					return redirect()->back()->with('success', 'entry-updated-successfully');
 
 				}else{
-					return redirect()->back()->with('error', 'Something went wrong.');
+					return redirect()->back()->with('error', 'something-wrong');
 				}
 			}else{
-				return redirect()->back()->with('error', 'Something went wrong.');
+				return redirect()->back()->with('error', 'something-wrong');
 			}
 
 		}
 
 		// Return naar de pagina en stuur een error message mee
-		return redirect()->back()->with('error', 'Something went wrong.');
+		return redirect()->back()->with('error', 'something-wrong');
 
 	}
 
@@ -96,15 +96,15 @@ class CreditsInformationController extends Controller
 
 			if(static::approve_info_data($request)){
 
-				return redirect()->back()->with('success', 'Your entry is updated successfully.');
+				return redirect()->back()->with('success', 'entry-updated-successfully');
 
 			}else{
-				return redirect()->back()->with('error', 'Something went wrong.');
+				return redirect()->back()->with('error', 'something-wrong');
 			}
 
 		}
 
-		return redirect()->back()->with('error', 'Something went wrong.');
+		return redirect()->back()->with('error', 'something-wrong');
 	}
 
 	public function delete(Request $request){
@@ -117,11 +117,11 @@ class CreditsInformationController extends Controller
 
 				if(static::delete_info_data($request->id)){
 
-					return redirect()->back()->with('success', 'Your entry is updated successfully.');
+					return redirect()->back()->with('success', 'entry-deleted-successfully');
 
 				}else{
 
-					return redirect()->back()->with('error', 'Something went wrong.');
+					return redirect()->back()->with('error', 'something-wrong');
 				}
 
 

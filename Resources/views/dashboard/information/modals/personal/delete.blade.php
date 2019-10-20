@@ -15,7 +15,7 @@
             <div class="modal-header">
                 <h5 class="modal-title text-danger" id="exampleModalLongTitle">
                     <strong>
-                        Delete this item
+                        @lang('credits::modals.delete')
                     </strong>
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -24,20 +24,20 @@
             </div>
             <div class="modal-body">
                 <h5>
-                    The following title will be deleted.
+                    @lang('credits::modals.delete-warning')
                 </h5>
                 <hr>
 
 
                 <div class="col-md-12 delete_title mb-3">
                     Title
-                    This line of text will not be vissible on the website.
+                    This line of text will not be shown on the website.
                     This is where data will be placed using JS.
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-danger">Delete</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">@lang('credits::forms.button-close')</button>
+                <button type="submit" class="btn btn-danger">@lang('credits::forms.button-delete')</button>
             </div>
         </div>
 
