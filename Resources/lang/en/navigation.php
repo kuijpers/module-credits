@@ -13,6 +13,7 @@
 
 		// Side navigation
 
+		'tab-side-info'									=> 'Explanation',
 		'tab-side-personal'								=> 'Personal',
 		'tab-side-authors'								=> 'Authors',
 		'tab-side-editor'								=> 'Editor',

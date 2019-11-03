@@ -111,31 +111,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="link" class="h4">
-                                @lang('credits::general.where-to') *
-                            </label>
-                            <div class="form-row">
-                                <div class="col-md-11">
-                                    <input name="link"
-                                           type="text"
-                                           class="form-control @error('link') is-invalid @enderror"
-                                           id="link"
-                                           aria-describedby="title"
-                                           placeholder="Enter weblink if non leave blank"
-                                           value="{{old('link')}}">
-                                    <div class="invalid-feedback">
-                                        @error('link'){{ $message }}@enderror
-                                    </div>
-                                </div>
-                                <div class="col-md-1">
-                                    <li class="fas fa-question-circle fa-lg text-info"
-                                        data-toggle="tooltip"
-                                        title="@lang('credits::tooltips.where-to')">
-                                    </li>
-                                </div>
-                            </div>
-                        </div>
+
+{{--                        <div class="form-group">--}}
+{{--                            <label for="link" class="h4">--}}
+{{--                                @lang('credits::general.where-to') *--}}
+{{--                            </label>--}}
+{{--                            <div class="form-row">--}}
+{{--                                <div class="col-md-11">--}}
+{{--                                    <input name="link"--}}
+{{--                                           type="text"--}}
+{{--                                           class="form-control @error('link') is-invalid @enderror"--}}
+{{--                                           id="link"--}}
+{{--                                           aria-describedby="title"--}}
+{{--                                           placeholder="Enter weblink if non leave blank"--}}
+{{--                                           value="{{old('link')}}">--}}
+{{--                                    <div class="invalid-feedback">--}}
+{{--                                        @error('link'){{ $message }}@enderror--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-md-1">--}}
+{{--                                    <li class="fas fa-question-circle fa-lg text-info"--}}
+{{--                                        data-toggle="tooltip"--}}
+{{--                                        title="@lang('credits::tooltips.where-to')">--}}
+{{--                                    </li>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
                         <div class="form-group">
                             <label for="information" class="h4">
@@ -189,4 +190,3 @@
 
 
 @endsection
-

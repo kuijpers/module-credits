@@ -13,6 +13,54 @@ use Auth;
 
 class CreditsInformationController extends Controller
 {
+	// Permission list
+		//	credits-information-personal-list
+		//	credits-information-personal-create
+		//	credits-information-personal-update
+		//	credits-information-personal-delete
+
+		//	credits-information-author-list
+
+		//	credits-information-editor-list
+		//	credits-information-editor-update
+		//	credits-information-editor-delete
+		//	credits-information-editor-disapprove
+		//	credits-information-editor-approve
+
+		//	credits-information-publisher-list
+		//	credits-information-publisher-update
+		//	credits-information-publisher-delete
+		//	credits-information-publisher-disapprove
+		//	credits-information-publisher-approve
+		//	credits-information-publisher-publish
+
+		//	credits-information-publisher-unpublish
+
+		//	credits-information-destroy-list
+		//	credits-information-destroy-recall
+		//	credits-information-destroy-permanent
+
+	function __construct(){
+
+		$this->middleware('role_or_permission:credits-information-personal-create',
+			['only' => ['create',
+						'store']]);
+
+		$this->middleware('role_or_permission:credits-information-personal-update|
+										credits-information-editor-update|
+										credits-information-publisher-update',
+			['only' => ['update','approve']]);
+
+		$this->middleware('role_or_permission:credits-information-personal-delete|
+										credits-information-editor-delete|
+										credits-information-publisher-delete',
+			['only' => ['delete']]);
+
+		$this->middleware('role_or_permission:credits-information-destroy-permanent',
+			['only' => ['destroy']]);
+
+
+	}
 
 
 	public function create()
@@ -24,7 +72,6 @@ class CreditsInformationController extends Controller
 	{
 		// we receive
 		// -	$request('title')
-		// -	$request('link')
 		// -	$request('content')
 		// -	$request('files') !!! Not in use but summernote sends it anyway No need to use this.
 
@@ -214,7 +261,6 @@ class CreditsInformationController extends Controller
 
 	Validator::make($request->all(), [
 		'title' 	=> 'required|max:255',
-		'link' 		=> 'nullable|active_url',
 		'content' 	=> 'required',
 	])->validate();
 

@@ -12,18 +12,21 @@
 
 
 
+@can('credits-information-personal-list')
+    <script src="{{asset('modules/credits/js/modals/personal/view.js')}}"></script>
+@endcan
 
-<script src="{{asset('modules/credits/js/modals/personal/view.js')}}"></script>
+@can('credits-information-personal-update')
 
+    <script src="{{asset('modules/credits/js/modals/personal/edit.js')}}"></script>
 
+    <script src="{{asset('modules/credits/js/modals/personal/approve.js')}}"></script>
 
-<script src="{{asset('modules/credits/js/modals/personal/edit.js')}}"></script>
+@endcan
 
+@can('credits-information-personal-delete')
 
+    <script src="{{asset('modules/credits/js/modals/personal/delete.js')}}"></script>
 
-<script src="{{asset('modules/credits/js/modals/personal/approve.js')}}"></script>
-
-
-
-<script src="{{asset('modules/credits/js/modals/personal/delete.js')}}"></script>
+@endcan
 

@@ -1,13 +1,22 @@
 
 {{--Personal section--}}
+@can('credits-information-personal-list')
+    @include('credits::dashboard.information.modals.personal.view')
+@endcan
 
-@include('credits::dashboard.information.modals.personal.view')
+@can('credits-information-personal-update')
 
-@include('credits::dashboard.information.modals.personal.edit')
+    @include('credits::dashboard.information.modals.personal.edit')
 
-@include('credits::dashboard.information.modals.personal.approve')
+    @include('credits::dashboard.information.modals.personal.approve')
 
-@include('credits::dashboard.information.modals.personal.delete')
+@endcan
+
+@can('credits-information-personal-delete')
+
+    @include('credits::dashboard.information.modals.personal.delete')
+
+@endcan
 
 
 

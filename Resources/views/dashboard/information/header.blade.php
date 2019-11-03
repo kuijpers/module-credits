@@ -1,6 +1,6 @@
 <div class="row mb-3 mt-3">
     <div class="col-md-2 pull-left">
-        @can('credits-personal-create')
+        @can('credits-information-personal-create')
             <a class="btn btn btn-outline-secondary" href="{{ route('dashboard.credits.information.create') }}">
                 @lang('credits::forms.button-create')
             </a>
