@@ -19,7 +19,7 @@
     <a class="nav-link nav-link-color" id="information-authors-tab" data-toggle="pill" href="#information-authors" role="tab" aria-controls="information-authors" aria-expanded="true">
         @lang('credits::navigation.tab-side-authors')
         <span class="badge badge-secondary float-right mt-1">
-            2
+            {{$author_info_drafts->count()}}
         </span>
     </a>
     @endcan
@@ -29,7 +29,7 @@
     <a class="nav-link nav-link-color" id="information-editor-tab" data-toggle="pill" href="#information-editor" role="tab" aria-controls="information-editor" aria-expanded="true">
         @lang('credits::navigation.tab-side-editor')
         <span class="badge badge-secondary float-right mt-1">
-            4
+            {{$editor_info_drafts->count()}}
         </span>
     </a>
     @endcan

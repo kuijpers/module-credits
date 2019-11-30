@@ -195,11 +195,24 @@ class CreditsInformationController extends Controller
 	}
 
 	public static function get_author_drafts(){
-		//
+
+		$author_info_drafts = CreditsInformation::whereNull('author_approve')
+			->whereNull('editor_approve')
+			->whereNull('publisher_approve')
+			->get();
+
+		return $author_info_drafts;
+
 	}
 
 	public static function get_editor_drafts(){
-		//
+
+		$editor_info_drafts = CreditsInformation::whereNotNull('author_approve')
+			->whereNull('editor_approve')
+			->whereNull('publisher_approve')
+			->get();
+
+		return $editor_info_drafts;
 	}
 
 	public static function get_publisher_drafts(){

@@ -9,6 +9,18 @@
 		'personal-approve-button'						=>	'Approve draft',
 		'personal-delete-button'						=>	'Delete draft',
 
+		// Authors
+
+		'authors-view-button'							=>	'View authors draft',
+
+		// Editor
+
+		'editor-view-button'							=>	'View item',
+		'editor-edit-button'							=>	'Edit item',
+		'editor-approve-button'							=>	'Approve item',
+		'editor-delete-button'							=>	'Delete item',
+
+
 		// Create new
 		'for-who'										=> 'Who to give credits to !',
 		'where-to'										=> 'Make sure it\'s an active link !

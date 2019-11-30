@@ -23,8 +23,15 @@ class CreditsController extends Controller
 
     	$personal_info_drafts	=	CreditsInformationController::get_personal_drafts();
 
+    	$author_info_drafts		=	CreditsInformationController::get_author_drafts();
 
-        return view('credits::dashboard.index')->with(compact('personal_info_drafts'));
+    	$editor_info_drafts		=	CreditsInformationController::get_editor_drafts();
+
+
+        return view('credits::dashboard.index')->with(compact('personal_info_drafts',
+																'author_info_drafts',
+																'editor_info_drafts'
+																));
     }
 
     public function create_main()

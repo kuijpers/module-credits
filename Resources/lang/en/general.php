@@ -21,11 +21,23 @@
 
 		'personal-drafts'								=>	'Personal drafts',
 
+		// Authors
+
+		'author-drafts'									=>	'Author drafts',
+
+		// Editor
+
+		'editor-check'									=>	'Editor check',
+		'editor-not-processed'							=>	'',
+
 
 		// Tables
 
 		'table-title'									=>	'Title',
-		'table-content'									=>	'content',
+		'table-content'									=>	'Content',
+		'table-author'									=>	'Author',
+		'table-author-approved'							=>	'Approved',
+		'table-editor'									=>	'Editor',
 
 
 	];

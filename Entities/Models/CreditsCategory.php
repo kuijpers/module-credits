@@ -17,6 +17,7 @@ class CreditsCategory extends Model {
 								'slug',
 								'created_by',
 							];
+
 }
 
 

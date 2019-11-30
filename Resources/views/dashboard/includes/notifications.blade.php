@@ -1,14 +1,14 @@
 {{-- All alerts with bootstrap settings--}}
 
 
-{{--@if( Session::has('primary') )--}}
+@if( Session::has('primary') )
     <div class="alert alert-primary alert-dismissible fade show tosti" role="alert">
-{{--        {{ Session::get('primary') }}--}} Dit is een test strook
+        {{ Session::get('primary') }}
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-{{--@endif--}}
+@endif
 
 @if( Session::has('secondary') )
     <div class="alert alert-secondary alert-dismissible fade show tosti" role="alert">

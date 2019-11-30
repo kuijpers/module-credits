@@ -30,3 +30,25 @@
 
 @endcan
 
+<script src="{{asset('modules/credits/js/modals/authors/view.js')}}"></script>
+
+@can('credits-information-editor-list')
+    <script src="{{asset('modules/credits/js/modals/editor/view.js')}}"></script>
+@endcan
+
+@can('credits-information-editor-update')
+
+    <script src="{{asset('modules/credits/js/modals/editor/edit.js')}}"></script>
+
+    <script src="{{asset('modules/credits/js/modals/editor/approve.js')}}"></script>
+
+    <script src="{{asset('modules/credits/js/modals/editor/disapprove.js')}}"></script>
+
+@endcan
+
+@can('credits-information-editor-delete')
+
+    <script src="{{asset('modules/credits/js/modals/editor/delete.js')}}"></script>
+
+@endcan
+
